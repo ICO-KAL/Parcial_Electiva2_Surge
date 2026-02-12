@@ -15,4 +15,4 @@ jobs:
     - name: install surge
       run: npm install --global surge
     - name: install server
-      run: surge ./  https://screeching-cars.surge.sh/  --token 1a4ec8f84408fff34776df23d6ea5ec6
+      run: surge ./  ${{vars.SURGE_VARIABLE}}  --token ${{secrets.SURGE_TOKEN}}
