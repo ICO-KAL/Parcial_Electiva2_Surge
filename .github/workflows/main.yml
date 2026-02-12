@@ -15,4 +15,4 @@ jobs:
     - name: install surge
       run: npm install --global surge
     - name: install server
-      run: surge ./  ${{vars.SURGE_VARIABLE}}  --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./  ${{vars.SURGE_VARIABLE}}  --token ${{secrets.SURGE_TOKEN}} 
