@@ -15,4 +15,5 @@ jobs:
     - name: install surge
       run: npm install --global surge
     - name: install server
+    # secretos y variable en la variable contiene el surgen token y el otro contiene la pagina en surge variable
       run: surge ./  ${{vars.SURGE_VARIABLE}}  --token ${{secrets.SURGE_TOKEN}} 
